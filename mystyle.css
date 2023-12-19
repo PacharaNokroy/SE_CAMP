@@ -13,6 +13,7 @@
   .box:hover {
     background-color: rgb(118, 11, 82);
   }
+  
   .box:hover {
     background-color: rgb(118, 11, 82);
     box-shadow: 25px 30px 20px rgba(0, 0, 0, 10);
