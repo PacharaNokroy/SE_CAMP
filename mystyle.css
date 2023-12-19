@@ -1,0 +1,21 @@
+.box {
+    width: 400px;
+    height: 400px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(88, 90, 88);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border: 5px dashed rgb(0, 255, 0);
+    margin: 50px 25px;
+  }
+  
+  .box:hover {
+    background-color: rgb(118, 11, 82);
+  }
+  .box:hover {
+    background-color: rgb(118, 11, 82);
+    box-shadow: 25px 30px 20px rgba(0, 0, 0, 10);
+    border-color: rgb(0, 200, 255);
+
+}
