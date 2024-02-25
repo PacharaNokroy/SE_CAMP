@@ -4,31 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ตารางสูตรคูณ🧮</title>
+    <title>ตารางสูตรคูณ</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            margin: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #a5bbba;
+            
         }
 
         h1 {
             color: #333;
         }
 
-        table {
-            border-collapse: collapse;
-            width: 25%;
-            margin-top: 20px;
+        .input-container {
+            display: flex;
+            margin-bottom: 10px;
         }
 
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #f2f2f2;
+        label {
+            padding-right: 10px;
         }
 
         input {
@@ -47,15 +47,32 @@
         button:hover {
             background-color: #45a049;
         }
+
+        table {
+            border-collapse: collapse;
+            width: 25%;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 
 <body>
-    <h1>ตารางสูตรคูณ🧮</h1>
-    <label for="my_number">กรอกตัวเลข:</label>
-    <input type="number" id="my_number" value="10">
-    <button onclick="generateTable()">สร้างตาราง</button>
-    <br>
+    <h1>ตารางสูตรคูณ</h1>
+    <div class="input-container">
+        <label for="my_number">กรอกตัวเลข:</label>
+        <input type="number" id="my_number" value="10">
+        <button onclick="generateTable()">สร้างตาราง</button>
+    </div>
     <table>
         <thead>
             <tr>
